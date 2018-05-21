@@ -5,8 +5,19 @@
 /**
  * Set up a decent box model on the root element
  */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html {
   box-sizing: border-box;
+}
+
+body {
+	background-color: #eaeaea;
+	font-family: "Raleway", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"!important;
 }
 
 /**

@@ -2,3 +2,35 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+
+.container {
+	background-color: white;
+}
+
+nav.bg-light {
+	background-color: white!important;
+	border-bottom: 1px solid;
+}
+
+.navbar-collapse {
+	justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  z-index: 0;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(243, 22, 43, 0.81);
+}

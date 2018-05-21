@@ -1,3 +1,53 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+@import '../components/datepicker';
+
+.published-newspapers {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 2rem;
+
+	img {
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.published-newspaper {
+		&__title {
+			margin: 0.5rem 0;
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+
+		&__button {
+			width: 100%;
+		}
+
+		&__link {
+			display: block;
+			font-size: 0.9rem;
+			margin: 0.5rem 0; 
+			text-decoration: none;
+		}
+	}
+}
+
+.section-label {
+	padding: 0.8rem;
+	padding-bottom: 0;
+  color: #495057;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.section-titlebar {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}

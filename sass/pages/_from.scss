@@ -1,0 +1,12 @@
+.newspaper-form {
+	width: 60%;
+	margin: 0 auto;
+	padding: 2rem;
+	font-size: 0.9rem;
+}
+
+.form-field {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin-bottom: 1rem;
+}
