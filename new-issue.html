@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/vendor/classic.css">
+    <link rel="stylesheet" href="css/vendor/classic.date.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Navbar -->
+    <header class="container nav-container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">E-Paper</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div></div>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Hello, Prayukti<span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav> 
+    </header><!-- /Navbar -->
+
+    <section class="container">
+      <h3 class="text-center pt-3">Issue Information</h3>
+      <form class="newspaper-form">
+        <div class="form-field">
+          <label class="newspaper-form__label" for="issue-title">Issue Name:</label>
+          <input type="text" name="issue-title">
+        </div>
+        <div class="form-field">
+          <label class="newspaper-form__label" for="newspaper-logo">Newspaper Logo:</label>
+          <input type="file" name="newspaper-logo">
+        </div>
+        <div class="form-field">
+          <label class="newspaper-form__label" for="newspaper-lang">Newspaper Language:</label>
+          <select class="newspaper-form__dropdown" name="newspaper-lang">
+            <!-- language options will come here -->
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="newspaper-form__label" for="newspaper-frequency">Newspaper Frequency:</label>
+          <select class="newspaper-form__dropdown" name="newspaper-frequency">
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+            <option>Annualy</option>
+            <option>Not Applicable</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="newspaper-form__label" for="newspaper-download">Allow download:</label>
+          <input type="checkbox" name="newspaper-download">
+        </div>
+        <button type="submit" class="button d-block mx-auto">Submit Details</button>
+      </form>
+    </section>
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>    
+    <script type="text/javascript" src="js/vendor/fontawesome-all.min.js"></script>
+    <script type="text/javascript" src="js/vendor/picker.js"></script>
+    <script type="text/javascript" src="js/vendor/picker.date.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  </body>
+</html>
