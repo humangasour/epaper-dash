@@ -30,7 +30,7 @@ const createFileInput = (index) => {
     let input = document.createElement('input');
     input.setAttribute('type', 'file');
     input.setAttribute('id', `page-${index}`);
-    input.setAttribute('name', `page`);
+    input.setAttribute('name', `page[]`);
     div.appendChild(input);
     document.getElementById('fileInputs').appendChild(div);
 }
@@ -43,4 +43,6 @@ $('#num-pages').on('input', function() {
         createFileInput(i);
     }
 })
+
+
 

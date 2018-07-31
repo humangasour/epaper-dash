@@ -42,18 +42,18 @@
 
     <section class="container">
       <h3 class="text-center pt-3">Issue Information</h3>
-      <form class="newspaper-form">
+      <form id="newIssueForm" class="newspaper-form">
         <div class="form-field">
           <label class="newspaper-form__label" for="issue-title">Issue Name:</label>
-          <input type="text" name="issue-title" id="issue-title">
+          <input type="text" id="issue-title">
         </div>
         <div class="form-field">
           <label class="newspaper-form__label" for="num-pages">Number of Pages:</label>
-          <input type="number" name="numPages" id="num-pages">
+          <input type="number" id="num-pages">
         </div>
         <div id="fileInputs">
         </div>
-        <button type="submit" class="button d-block mx-auto">Submit Details</button>
+        <button id="newIssueSubmitBtn" type="submit" class="button d-block mx-auto">Submit Details</button>
       </form>
     </section>
 
@@ -62,8 +62,17 @@
     <script type="text/javascript" src="js/vendor/fontawesome-all.min.js"></script>
     <script type="text/javascript" src="js/vendor/picker.js"></script>
     <script type="text/javascript" src="js/vendor/picker.date.js"></script>
+    <script type="text/javascript" src="js/vendor/axios.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+      $('#newIssueSubmitBtn').on('click', function(e) {
+        e.preventDefault();
+        var formData = new FormData('#newIssueForm');
+        axios.post('https://e-paper.herokuapp.com/epaper/', formData);
+      })
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
